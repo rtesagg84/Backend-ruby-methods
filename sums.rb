@@ -1,20 +1,13 @@
 
 class Sum1
-    attr_reader = :num1
-    attr_reader = :num2
     attr_accessor :total
-    def intial_num(num1,num2,total)
-       @num1 = num1
-       @num2 = num2
-       @total = total
-    end
     def totalvalue(num1 , num2)
       total = num1 + num2
       puts "sum1 :#{total}"
       end
  end         
  sum1 = Sum1.new()
- sum1.totalvalue(90,20)
+ sum1.totalvalue(5,6)
 
  class Sum2
     attr_reader = :a
@@ -27,10 +20,8 @@ class Sum1
     end
     def new_total(a , b)
       newtotal = a + b
-      puts "sum2 :#{newtotal}"
+      puts " sum2 :#{newtotal}"
       end
- end         
- sum1 = Sum1.new()
- def sum1sum2()
- end  
-
+  end         
+ sum2 = Sum2.new()
+sum2.new_total(5,6)

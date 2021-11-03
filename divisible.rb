@@ -1,6 +1,5 @@
 class Divisible
-   attr_reader = :lower
-   attr_reader = :higher
+   attr_reader = :lower, :higher
   def intial_num(lower,higher)
        @lower = lower
        @higher = higher
@@ -15,7 +14,7 @@ class Divisible
        end
          puts " This is the list of the numbers divisible by 2,3 and 5 : #{array}"
          puts "-------------------------------------"
-         puts "array  size: #{array.size}"
+         puts "array size: #{array.size}"
     end
 end    
 divisible = Divisible.new()

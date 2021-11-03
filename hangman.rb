@@ -1,6 +1,5 @@
 class Hangman
-   attr_reader = :word
-   attr_reader = :arrayletters
+   attr_reader = :word,:arrayletters
    def intial_num(word,arrayletters)
       @word = word
       @arrayletters = arrayletters
