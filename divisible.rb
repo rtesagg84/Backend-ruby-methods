@@ -12,9 +12,11 @@ class Divisible
           end
 
        end
+       puts "-------------------------------------"
          puts " This is the list of the numbers divisible by 2,3 and 5 : #{array}"
          puts "-------------------------------------"
          puts "array size: #{array.size}"
+         puts "-------------------------------------"
     end
 end    
 divisible = Divisible.new()

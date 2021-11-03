@@ -19,3 +19,10 @@ class Hangman
 end         
 divisible = Hangman.new()
 divisible.guess('aster',['a','s','r'])
+# puts "enter any word in the for mat of 'alaka' :"
+# aster = gets.chomp
+#  puts "enter an array with a letters like this format ['a','s','r']"
+#  arrayofSrings  = gets.chomp
+#  divisible = Hangman.new()
+#  divisible.guess(aster,arrayofSrings)
+
