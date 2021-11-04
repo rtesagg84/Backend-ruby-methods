@@ -30,20 +30,40 @@ class Book
     # end
   end
   puts new_array
-
   puts "-----------------------------------------------------------"
-  puts "Sorting alphabetically by title"
-
-  arraysorted_bytitle = book_array.sort_by{|arry| arry.title}
-  puts arraysorted_bytitle
-
-  puts "-----------------------------------------------------------"
-
-  puts "-----------------------------------------------------------"
-  puts "Sorting alphabetically by copies"
+  sortedbytitle = book_array.sort do |a,b|
+    title1 = a.title.downcase
+    title2 = b.title.downcase
+  title1 <=> title2
   
-  arraysorted_byCopies = book_array.sort_by{|arry| arry.count}
-  puts arraysorted_byCopies
+  end
+  puts "This result is sorted by title "
+  puts sortedbytitle
 
   puts "-----------------------------------------------------------"
+  sortedbycount = book_array.sort do |a,b|
+    count1 = a.count
+    count2 = b.count
+  count1 <=> count2
+  
+  end
+  puts "This result is sorted by  count"
+  puts sortedbycount
+
+
+  # puts "-----------------------------------------------------------"
+  # puts "Sorting alphabetically by title"
+
+  # arraysorted_bytitle = book_array.sort_by{|arry| arry.title}
+  # puts arraysorted_bytitle
+
+  # puts "-----------------------------------------------------------"
+
+  # puts "-----------------------------------------------------------"
+  # puts "Sorting alphabetically by copies"
+  
+  # arraysorted_byCopies = book_array.sort_by{|arry| arry.count}
+  # puts arraysorted_byCopies
+
+  # puts "-----------------------------------------------------------"
  
